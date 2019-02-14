@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>person_1208.jpg</filename>
+	<path>C:\Users\homer\Desktop\TF Record sample\humanDetection\images\person_1208.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>960</width>
+		<height>544</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>person</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>903</xmin>
+			<ymin>303</ymin>
+			<xmax>932</xmax>
+			<ymax>349</ymax>
+		</bndbox>
+	</object>
+</annotation>
