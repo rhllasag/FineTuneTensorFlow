@@ -5,8 +5,22 @@ using [Tensorflow's object detection API](https://github.com/tensorflow/models/t
 The final model has been fine-tuned using ssd_mobilenet_v1_coco of the [models pre-trained](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
 on the [COCO dataset](http://mscoco.org/) as a starting point (*transfer learning*).
 
+
+
+
+### Installation 
+
 ## Trying the dataset
 In order to try the dataset, you first need to follow the [installation instructions](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md) on the Tensorflow page. 
+## Google Cloud
+In to use Google Cloud resources, you need to install the [google SDK](https://cloud.google.com/sdk/) on the Google Cloud page. 
+
+
+
+### File configuration 
+* *pipeline*: *.config* In order to fine-tune the model, you need to configurate the *fine_tune_checkpoint, label_map_path and input_path* to your own repository. If you will run with a Google Cloud bucket, you can use *gs://my-bucket*. 
+* *annotations*: *.xml* In you want to create new FTRecord files with other images, you need to change the path of the *xml* files to your own path. 
+* *hyperparameters*: *cloud.yuml.* Probably you need to change the *runtime version, masterType, workerType, parameterServerType* if you will train with clustering with GPU such in [google cloud platform] (https://cloud.google.com/solutions/running-distributed-tensorflow-on-compute-engine).
 
 ### File description
 #### Folders
