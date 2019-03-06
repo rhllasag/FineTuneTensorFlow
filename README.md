@@ -20,7 +20,7 @@ In to use Google Cloud resources, you need to install the [google SDK](https://c
 ## File configuration 
 * *pipeline*: *.config* In order to fine-tune the model, you need to configurate the *fine_tune_checkpoint, label_map_path and input_path* to your own repository. If you will run with a Google Cloud bucket, you can use *gs://my-bucket*. 
 * *annotations*: *.xml* In you want to create new FTRecord files with other images, you need to change the path of the *xml* files to your own path. 
-* *hyperparameters*: *cloud.yuml.* Probably you need to change the *runtime version, masterType, workerType, parameterServerType* if you will train with clustering with GPU such in [google cloud platform] (https://cloud.google.com/solutions/running-distributed-tensorflow-on-compute-engine).
+* *hyperparameters*: *cloud.yuml.* Probably you need to change the *runtime version, masterType, workerType, parameterServerType* if you will train with a distribute architecture and GPU resources such in [google cloud platform] (https://cloud.google.com/solutions/running-distributed-tensorflow-on-compute-engine).
 
 ## File description
 ### Folders
