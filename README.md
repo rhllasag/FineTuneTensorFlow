@@ -1,6 +1,6 @@
 # Human Detection
-This repository contains the UCF-ARG dataset and some of the configuration files to train the human detector for a Search And Rescue application, 
-using [Tensorflow's object detection API](https://github.com/tensorflow/models/tree/master/research/object_detection).
+This repository contains annotations of the UCF-ARG dataset  (not images) and some of the configuration files to train the human detector for a Search And Rescue application, 
+using [Tensorflow's object detection API](https://github.com/tensorflow/models/tree/master/research/object_detection). 
 
 The final model has been fine-tuned using ssd_mobilenet_v1_coco of the [models pre-trained](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
 on the [COCO dataset](http://mscoco.org/) as a starting point (*transfer learning*).
